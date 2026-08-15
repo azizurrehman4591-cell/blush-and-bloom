@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f8;
+    color: #3d3032;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background: #f8dfe3;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    color: #7b3f4a;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #8f6870;
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 16px;
+    background: #fff;
+    border-bottom: 1px solid #f0d5d9;
+}
+
+nav a {
+    color: #7b3f4a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c47787;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 55px 25px;
+    background: linear-gradient(135deg, #fff0f2, #f9e4d8);
+    border-radius: 25px;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #713d48;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #69565a;
+}
+
+button {
+    border: none;
+    background: #9f5969;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7b3f4a;
+}
+
+.categories {
+    text-align: center;
+}
+
+.categories > h2 {
+    font-family: Georgia, serif;
+    color: #713d48;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #f0d9dc;
+    box-shadow: 0 5px 18px rgba(120, 70, 80, 0.08);
+}
+
+.card h3 {
+    color: #8c4e5d;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #756568;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 25px;
+    background: #f8dfe3;
+    color: #7b3f4a;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 14px;
+    }
+}
